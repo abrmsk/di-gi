@@ -1,3 +1,3 @@
 # Task #1
 
-[Di-gi GitHubPage](https://alextheme.github.io/di-gi/)
+[Di-gi Page](https://abrmsk.github.io/di-gi/)
