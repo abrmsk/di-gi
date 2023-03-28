@@ -42,11 +42,18 @@ $(function () {
     });
   });
 
+  // send message for telegram bot
+  // https://core.telegram.org/bots/api#sendmessage chat_id - это ваш личный id в телеграме. 
+  // https://help.1forma.ru/Admin_Manual/smart_http_bot.htm (РУКОВОДСТВО АДМИНИСТРАТОРА)
+  // Узнать ID - https://core.telegram.org/bots/api#getting-updates
+  // В сообщении видно chat_id автора. Соответственно пишите боту что нибудь, видите свой chat_id, хардкодите его в коде.
+
   $('#tg-bot-01').on('click', () => {
-    const token = "1929534359:AAHI7gQBNhhEcXEJSWHM0pGt6967SLv1bYc";
-    const chat = "-421760080";
+    // const token = "6146323883:AAGdHpikP3yvraQrDxFstOw3UzSzOJMblog"; // t.me/CommentsInstagramBot
+    const token = "1929534359:AAHI7gQBNhhEcXEJSWHM0pGt6967SLv1bYc"; // t.me/send_request1_bot
+    const chat_id = "999781240";
     const msg = encodeURI(`Кто то смотрит код\n и нажимает кнопки\n :-)`);
-    const httpRequest = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat}&parse_mode=html&text=${msg}`;
+    const httpRequest = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&parse_mode=html&text=${msg}`;
 
     const request = async () => {
       const response = await fetch(
