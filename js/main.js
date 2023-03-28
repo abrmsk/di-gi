@@ -52,7 +52,7 @@ $(function () {
     // const token = "6146323883:AAGdHpikP3yvraQrDxFstOw3UzSzOJMblog"; // t.me/CommentsInstagramBot
     const token = "1929534359:AAHI7gQBNhhEcXEJSWHM0pGt6967SLv1bYc"; // t.me/send_request1_bot
     const chat_id = "999781240";
-    const msg = encodeURI(`Кто то смотрит код\n и нажимает кнопки\n :-)`);
+    const msg = encodeURI(`https://abrmsk.github.io/di-gi\nНажата кнопка меню`);
     const httpRequest = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&parse_mode=html&text=${msg}`;
 
     const request = async () => {
